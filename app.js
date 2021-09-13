@@ -6,8 +6,9 @@ const inputData = document.querySelector('.input-data');
 let data = [];
 
 addBtn.addEventListener('click', ()=>{
-    data.push({title:inputTitle.value, author:inputAuthor.value});
-    displayBooks();
+    const id = Math.random().toString(36).substr(0,5);
+    data.push({title:inputTitle.value, author:inputAuthor.value, id:id});
+    displayBooks()
 });
 
 const displayBooks = () => {
