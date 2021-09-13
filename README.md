@@ -66,7 +66,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is a simple book list app that a user can use to add remove books and their authors. The app stores its data in the local-storage hence data is persistent. Use this [link](https://fierce-inlet-77592.herokuapp.com/) link to view the project
+This is a simple book list app that a user can use to add remove books and their authors. The app stores its data in the local-storage hence data is persistent. Use this [link](https://raw.githack.com/menyagah/AwesomeBooks/feature/index.html) link to view the project
 
 ### Built With
 
@@ -85,7 +85,7 @@ To get a local copy up and running follow these simple steps.
 1. Clone the repo
 
     ```sh
-    git clone https://github.com/menyagah/Todo-List_App.git
+    git clone https://github.com/menyagah/AwesomeBooks.git
     ```
 
 2.  Setup
