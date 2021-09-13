@@ -30,8 +30,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/menyagah/Telegram_Bot">
-    <img src="![index](https://user-images.githubusercontent.com/24241962/133161564-ca125811-a3ed-4a2a-ae07-6e5813b35d90.jpg)" alt="Logo" width="170" height="170">
+  <a href="https://github.com/menyagah/AwesomeBooks">
+    <img src="https://user-images.githubusercontent.com/24241962/133162144-7580a52b-0b0d-4d7e-9586-33c38937b617.jpg" alt="Logo" width="170" height="170">
   </a>
 
   <h3 align="center">Awesome Books</h3>
