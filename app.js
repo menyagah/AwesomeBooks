@@ -9,10 +9,10 @@ const displayBooks = () => {
   const bookItem = JSON.parse(localStorage.getItem('book') || '[]');
   bookItem.forEach(({ title, author, id }) => {
     const div = document.createElement('div');
-    div.innerHTML = `<div>title: ${title}</div>
+    div.innerHTML = `<div>title: ${title}</div><br>
                     <div>author: ${author}</div><br>
-                    <button class='remove-btn' id='${id}'>Remove</button>
-                    <hr>`;
+                    <button class='remove-btn' id='${id}'>Remove</button><br><br>
+                    <hr><br>`;
     inputData.appendChild(div);
   });
 };
