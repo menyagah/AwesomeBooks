@@ -26,13 +26,18 @@ const deleteBook = (el) => {
 };
 
 addBtn.addEventListener('click', () => {
-  const books = JSON.parse(localStorage.getItem('book') || '[]');
-  const id = Math.random().toString(36).substr(0, 5);
-  books.push({ title: inputTitle.value, author: inputAuthor.value, id });
-  localStorage.setItem('book', JSON.stringify(books));
-  displayBooks();
-  inputAuthor.value = '';
-  inputTitle.value = '';
+  if ((inputTitle.value && inputAuthor.value) === '') {
+    // eslint-disable-next-line no-alert
+    alert('You cannot add empty fields');
+  } else {
+    const books = JSON.parse(localStorage.getItem('book') || '[]');
+    const id = Math.random().toString(36).substr(0, 5);
+    books.push({ title: inputTitle.value, author: inputAuthor.value, id });
+    localStorage.setItem('book', JSON.stringify(books));
+    displayBooks();
+    inputAuthor.value = '';
+    inputTitle.value = '';
+  }
 });
 
 inputData.addEventListener('click', (e) => {
