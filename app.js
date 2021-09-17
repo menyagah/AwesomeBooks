@@ -31,8 +31,7 @@ class Book {
     localStorage.setItem('book', JSON.stringify(books.filter((book) => book.id !== id)));
     this.displayBooks();
   }
-}
-
+} 
 const book = new Book(inputTitle, inputAuthor);
 
 addBtn.addEventListener('click', () => {
