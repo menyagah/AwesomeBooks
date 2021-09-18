@@ -10,16 +10,16 @@
   display: grid;
   font-family: "Comic Sans MS", "Comic Sans", sans-serif;
   height: 100vh;
-  grid-template-columns:2fr 2fr 2fr ;
-  grid-template-rows:1fr 4fr 3fr;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 1fr 4fr 3fr;
 }
 
-.top-header{
+.top-header {
   display: flex;
   justify-content: center;
   align-items: center;
   grid-column-start: 2;
-  grid-column-end:3 ;
+  grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
 }
@@ -28,20 +28,22 @@
   display: flex;
   align-items: center;
   grid-column-start: 2;
-  grid-column-end:3 ;
+  grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
+  flex-direction: column;
+  border: 2px solid black;
 }
 
 .form-data {
   grid-column-start: 2;
-  grid-column-end:3 ;
+  grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
 }
 
-.input-title, 
-.input-author{
+.input-title,
+.input-author {
   width: 100%;
   height: 30px;
   font-size: 20px;
@@ -67,17 +69,11 @@
   border: 2px solid black;
 }
 
-.remove-btn{
+.remove-btn {
   width: 60px;
   margin-right: 2px;
   height: 20px;
   font-size: 15px;
-  border: 2px solid black;
-}
-
-.input-data {
-  display: flex;
-  flex-direction: column;
   border: 2px solid black;
 }
 
@@ -93,7 +89,7 @@
   background-color: silver;
 }
 
-::placeholder{
+::placeholder {
   font-family: "Comic Sans MS", "Comic Sans", sans-serif;
   color: black;
   opacity: 1;
