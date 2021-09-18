@@ -16,10 +16,9 @@ class Book {
     const bookItem = JSON.parse(localStorage.getItem('book') || '[]');
     bookItem.forEach(({ title, author, id }) => {
       const div = document.createElement('div');
-      div.innerHTML = `<div>title: ${title}</div><br>
-                          <div>author: ${author}</div><br>
-                          <button class='remove-btn' id='${id}'>Remove</button><br><br>
-                          <hr><br>`;
+      div.innerHTML = `<div class="user-details">"${title}" by ${author}</div>
+                          <button class='remove-btn' id='${id}'>Remove</button>
+                          `;
       inputData.appendChild(div);
     });
   }
