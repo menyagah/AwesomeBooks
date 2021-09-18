@@ -10,9 +10,9 @@
   display: grid;
   padding: 10px;
   font-family: "Comic Sans MS", "Comic Sans", sans-serif;
-  min-height: 100vh;
+  min-height: 96vh;
   grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: .5fr .5fr 1fr 3fr 3fr .5fr;
+  grid-template-rows: .5fr .5fr .5fr 3fr .5fr;
 }
 
 .top-header {
@@ -53,7 +53,7 @@ a, a:hover, a:focus, a:active {
   color: rgb(16, 16, 223);
 }
 
-.top-heading {
+.top-heading, .add-book-cont {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,9 +75,12 @@ a, a:hover, a:focus, a:active {
 }
 
 .form-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 5;
+  grid-row-start: 3;
   grid-row-end: 6;
 }
 
@@ -96,6 +99,7 @@ a, a:hover, a:focus, a:active {
 .input-author {
   width: 100%;
   height: 30px;
+  margin-bottom: 22px;
   font-size: 20px;
   border: 2px solid black;
 }
@@ -114,7 +118,7 @@ a, a:hover, a:focus, a:active {
 
 .add-book {
   display: flex;
-  height: 40px;
+  font-size: 35px;
   align-items: center;
   justify-content: center;
 }
@@ -143,4 +147,27 @@ a, a:hover, a:focus, a:active {
   font-family: "Comic Sans MS", "Comic Sans", sans-serif;
   color: black;
   opacity: 1;
+}
+
+.hide {
+  display: none;
+  opacity: 0;
+  z-index: 0;
+}
+
+.contact-section {
+  flex: 1 0 auto;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+.contact-info-list {
+  display: block;
+}
+
+.contact-info-list li {
+  margin-left: 30px;
+  display: list-item;
 }
