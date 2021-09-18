@@ -16,9 +16,10 @@ class Book {
     const bookItem = JSON.parse(localStorage.getItem('book') || '[]');
     bookItem.forEach(({ title, author, id }) => {
       const div = document.createElement('div');
-      div.innerHTML = `<div class="user-details">"${title}" by ${author}</div>
-                          <button class='remove-btn' id='${id}'>Remove</button>
-                          `;
+      div.classList.add('user-details');
+      div.innerHTML = ` <div>"${title}" by ${author}</div>
+                        <button class='remove-btn' id='${id}'>Remove</button>
+                        `;
       inputData.appendChild(div);
     });
   }
@@ -30,7 +31,8 @@ class Book {
     localStorage.setItem('book', JSON.stringify(books.filter((book) => book.id !== id)));
     this.displayBooks();
   }
-} 
+}
+
 const book = new Book(inputTitle, inputAuthor);
 
 addBtn.addEventListener('click', () => {
