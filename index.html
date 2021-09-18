@@ -9,25 +9,49 @@
 </head>
 <body>
     <main class="main_content">
-        <div class="top-header"><h1 >Awesome Books</h1></div>
+        <header class="top-header">
+            <div >Awesome Books</div>
+            <nav id="nav-items">
+                <a href="#" id="list-link">List</a> |
+                <a href="#" id="addlink">Add new</a> |
+                <a href="#" id="contact-link">Contact</a> 
+            </nav>
+        </header>
+        <section class="datetime"></section>
+        <div class="top-heading" id="top-text"><h1 >Awesome Books</h1></div>
         
-        <div class="input-data">
+        <div class="input-data" id="books-display">
 
         </div>
+
         
-        <div class="form-data">
-            <div class="add-book-cont">
-                <h2 class="add-book">Add new book</h2><br>
-            </div>
+        <h2 class="add-book add-book-cont hide" id="h1">Add a new book</h2><br>
+        
+        <div class="form-data hide" id="show-form">
             <input type="text" class="input-title" placeholder="title"><br>
             <br>
             <input type="text" class="input-author" placeholder="author"><br>
             <br>
             <div class="btn-cont"><button class="add-btn">Add</button></div>
-            
         </div>
+
+        <div class="contact-section hide" id="contacts">
+            <h2>Contact Information</h2>
+            <p>
+              Do you have any questions or you just want to say "Hello"? <br />
+              You can reach out to us!
+            </p>
+            <ul class="contact-info-list">
+              <li>Our e-mail: mail@mail.com</li>
+              <li>Our phone number: 004358653442</li>
+              <li>Our address: Streetname 22, 84503 City, Country</li>
+            </ul>
+        </div>
+
+        <footer class="footer-items"> copyright ...</footer>
         
     </main>
     <script src="app.js"></script>
+    <script src="https://moment.github.io/luxon/global/luxon.js"></script>
 </body>
 </html>
