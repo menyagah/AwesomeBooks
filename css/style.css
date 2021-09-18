@@ -50,13 +50,6 @@
   border: 2px solid black;
 }
 
-.add-book {
-  display: flex;
-  height: 40px;
-  align-items: center;
-  justify-content: center;
-}
-
 .btn-cont {
   display: flex;
   justify-content: flex-end;
@@ -67,6 +60,13 @@
   height: 25px;
   font-size: 18px;
   border: 2px solid black;
+}
+
+.add-book {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 .remove-btn {
