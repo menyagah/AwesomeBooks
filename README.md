@@ -66,7 +66,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is a simple book list app that a user can use to add remove books and their authors. The app stores its data in the local-storage hence data is persistent. Use this [link](https://raw.githack.com/menyagah/AwesomeBooks/feature/index.html) link to view the project
+This is a simple book list app that a user can use to add remove books and their authors. The app stores its data in the local-storage hence data is persistent. Use this [link](https://raw.githack.com/menyagah/AwesomeBooks/feature/index.html) to view the project.
 
 ### Built With
 
