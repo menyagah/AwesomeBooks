@@ -2,6 +2,15 @@ const inputAuthor = document.querySelector('.input-author');
 const inputTitle = document.querySelector('.input-title');
 const addBtn = document.querySelector('.add-btn');
 const inputData = document.querySelector('.input-data');
+const dateMonth = document.querySelector('.datetime');
+
+document.addEventListener('DOMContentLoaded', () => {
+  const { DateTime } = luxon;
+  const section = document.createElement('div');
+  section.classList.add('date-time');
+  section.innerHTML = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
+  dateMonth.appendChild(section);
+});
 
 class Book {
   constructor(inputTitle, inputAuthor) {

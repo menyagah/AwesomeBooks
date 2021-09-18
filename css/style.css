@@ -8,11 +8,11 @@
 
 .main_content {
   display: grid;
-  padding: 30px;
+  padding: 20px;
   font-family: "Comic Sans MS", "Comic Sans", sans-serif;
   height: 100vh;
   grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: 1fr 1fr 4fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr 4fr 3fr;
 }
 
 .top-header {
@@ -27,15 +27,28 @@
   grid-row-end: 2;
 }
 
+.datetime {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
 nav a {
   text-decoration: none;
   color: inherit;
+  font-size: 22px;
 }
 
 .logo a {
   text-decoration: none;
   color: inherit;
+  font-size: 28px;
 }
+
 a, a:hover, a:focus, a:active {
   color: rgb(16, 16, 223);
 }
@@ -46,8 +59,8 @@ a, a:hover, a:focus, a:active {
   align-items: center;
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 .input-data {
@@ -55,8 +68,8 @@ a, a:hover, a:focus, a:active {
   align-items: center;
   grid-column-start: 1;
   grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
   flex-direction: column;
   border: 2px solid black;
 }
@@ -64,8 +77,8 @@ a, a:hover, a:focus, a:active {
 .form-data {
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
 }
 
 .input-title,
