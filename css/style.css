@@ -5,3 +5,92 @@
   padding: 0;
   box-sizing: inherit;
 }
+
+.main_content {
+  display: grid;
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+  height: 100vh;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 1fr 4fr 3fr;
+}
+
+.top-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.input-data {
+  display: flex;
+  align-items: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+.form-data {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.input-title,
+.input-author {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  border: 2px solid black;
+}
+
+.add-book {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-cont {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-btn {
+  width: 54px;
+  height: 25px;
+  font-size: 18px;
+  border: 2px solid black;
+}
+
+.remove-btn {
+  width: 60px;
+  margin-right: 2px;
+  height: 20px;
+  font-size: 15px;
+  border: 2px solid black;
+}
+
+.user-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+
+.user-details:nth-child(odd) {
+  background-color: silver;
+}
+
+::placeholder {
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+  color: black;
+  opacity: 1;
+}
