@@ -1,3 +1,4 @@
+/* eslint no-unused-vars: 0 no-undef: 0 */
 const inputAuthor = document.querySelector('.input-author');
 const inputTitle = document.querySelector('.input-title');
 const addBtn = document.querySelector('.add-btn');

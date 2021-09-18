@@ -12,7 +12,7 @@
   font-family: "Comic Sans MS", "Comic Sans", sans-serif;
   min-height: 96vh;
   grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: .5fr .5fr .5fr 3fr .5fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 3fr 0.5fr;
 }
 
 .top-header {
@@ -37,23 +37,20 @@
   grid-row-end: 3;
 }
 
-nav a {
+a {
   text-decoration: none;
   color: inherit;
   font-size: 19px;
 }
 
-.logo a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 18px;
-}
-
-a, a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
   color: rgb(16, 16, 223);
 }
 
-.top-heading, .add-book-cont {
+.top-heading,
+.add-book-cont {
   display: flex;
   justify-content: center;
   align-items: center;
